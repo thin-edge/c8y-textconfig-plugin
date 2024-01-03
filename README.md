@@ -22,7 +22,9 @@ The following linux package formats are provided on the releases page and also i
 
 |Operating System|Repository link|
 |--|--|
+|Debian/Ubuntu|[![Latest version of 'c8y-textconfig-plugin' @ Cloudsmith](https://api-prd.cloudsmith.io/v1/badges/version/thinedge/community/deb/c8y-textconfig-plugin/latest/a=all;d=any-distro%252Fany-version;t=binary/?render=true&show_latest=true)](https://cloudsmith.io/~thinedge/repos/community/packages/detail/deb/c8y-textconfig-plugin/latest/a=all;d=any-distro%252Fany-version;t=binary/)|
 |RHEL/CentOS/Fedora/openSUSE|[![Latest version of 'c8y-textconfig-plugin' @ Cloudsmith](https://api-prd.cloudsmith.io/v1/badges/version/thinedge/community/rpm/c8y-textconfig-plugin/latest/a=noarch;d=any-distro%252Fany-version;t=binary/?render=true&show_latest=true)](https://cloudsmith.io/~thinedge/repos/community/packages/detail/rpm/c8y-textconfig-plugin/latest/a=noarch;d=any-distro%252Fany-version;t=binary/)|
+|Alpine Linux|[![Latest version of 'c8y-textconfig-plugin' @ Cloudsmith](https://api-prd.cloudsmith.io/v1/badges/version/thinedge/community/alpine/c8y-textconfig-plugin/latest/a=noarch;d=alpine%252Fany-version/?render=true&show_latest=true)](https://cloudsmith.io/~thinedge/repos/community/packages/detail/alpine/c8y-textconfig-plugin/latest/a=noarch;d=alpine%252Fany-version/)|
 
 
 ### What will be deployed to the device?
