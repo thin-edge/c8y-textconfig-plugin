@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=https://nfpm.goreleaser.com/static/schema.json
+---
+name: c8y-textconfig-plugin
+arch: all
+platform: linux
+version: ${SEMVER}
+section: misc
+priority: optional
+maintainer: Community <community@thin-edge.io>
+description: thin-edge.io plugin to support Cumulocity IoT text based configuration operation
+vendor: thin-edge.io
+homepage: https://github.com/thin-edge/c8y-textconfig-plugin
+license: Apache License 2.0
+apk:
+  # Use noarch instead of "all"
+  arch: noarch
+depends:
+  - python3
+contents:
+  - src: ./src/c8y_Configuration
+    dst: /etc/tedge/operations/c8y/
+    file_info:
+      mode: 0644
+      owner: tedge
+      group: tedge
+
+  - src: ./src/c8y-textconfig-plugin
+    dst: /usr/bin/
+    file_info:
+      mode: 0755

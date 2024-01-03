@@ -1,0 +1,38 @@
+#!/usr/bin/env python3
+import sys
+import subprocess
+import shutil
+import logging
+
+LOG = logging.getLogger()
+
+
+def main(config_text: str):
+    # Double quotes must be escaped with a two double quotes
+    escaped_text = config_text.replace('"', '""')
+    message = f'''113,"{escaped_text}"'''
+    print(f"message: {message}")
+    subprocess.check_call([
+        "tedge",
+        "mqtt",
+        "pub",
+        "--qos",
+        "1",
+        "c8y/s/us",
+        message,
+    ], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+
+    # TODO: Do something with the configuration (e.g. save it to file)
+
+
+if __name__ == "__main__":
+    if shutil.which("tedge") is None:
+        raise FileNotFoundError("Could not find the tedge binary")
+
+    if len(sys.argv) < 2:
+        raise Exception("Missing required")
+
+    config = sys.argv[1].split(',', maxsplit=2)[2]
+    if config.startswith('"') and config.endswith('"'):
+        config = config[1:-1]
+    main(config)
