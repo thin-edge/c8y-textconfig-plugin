@@ -2,7 +2,9 @@
 
 ## Plugin summary
 
-thin-edge.io text-based configuration operation plugin for Cumulocity IoT.
+thin-edge.io [text-based configuration operation](https://cumulocity.com/guides/reference/smartrest-two/#configuration-513) plugin for Cumulocity IoT.
+
+![docs](docs/images/config.png)
 
 **Technical summary**
 
