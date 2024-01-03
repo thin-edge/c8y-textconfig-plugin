@@ -4,6 +4,8 @@
 
 thin-edge.io [text-based configuration operation](https://cumulocity.com/guides/reference/smartrest-two/#configuration-513) plugin for Cumulocity IoT.
 
+:warning: The plugin itself currently only receives and acknowledges the config change, but does not do anything with it. The part where this can be included is shown in the code section.
+
 ![docs](docs/images/config.png)
 
 **Technical summary**
